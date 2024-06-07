@@ -62,7 +62,7 @@ function filterItem(
         onClick={(event) => handleXClick(event, name)}
         className="inline-block cursor-pointer bg-desaturatedDarkCyan px-3 py-[0.3rem] duration-200 hover:bg-veryDarkGrayishCyan"
       >
-        <IconRemove className="inline fill-white" />
+        <IconRemove className="inline h-4 w-4 fill-white" />
       </div>
     </li>
   );
