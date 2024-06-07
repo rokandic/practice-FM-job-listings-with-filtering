@@ -8,10 +8,29 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        desaturatedDarkCyan: "hsl(180, 29%, 50%)",
+        lightGrayishCyan: "hsl(180, 52%, 96%)",
+        lightGrayishCyanTablets: "hsl(180, 31%, 95%)",
+        darkGrayishCyan: "hsl(180, 8%, 52%)",
+        veryDarkGrayishCyan: "hsl(180, 14%, 20%)",
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        bgHeaderMobile: `url(${process.env.NEXT_PUBLIC_BASEPATH}/bg-header-mobile.svg)`,
+        bgHeaderDesktop: `url(${process.env.NEXT_PUBLIC_BASEPATH}/bg-header-desktop.svg)`,
+      },
+      fontSize: {
+        sm: "0.8rem",
+        base: "1.0rem",
+        lg: "1.1rem",
+        xl: "1.2rem",
+        "2xl": "1.563rem",
+        "3xl": "1.953rem",
+        "4xl": "2.441rem",
+        "5xl": "3.052rem",
+      },
+      screens: {
+        lg: process.env.DESKTOP_BREAKPOINT ?? "60rem",
       },
     },
   },
