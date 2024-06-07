@@ -79,7 +79,7 @@ export default function JobListItem({
               )}
             </div>
             <h3
-              className="cursor-pointer text-lg font-bold tracking-tighter text-veryDarkGrayishCyan hover:text-desaturatedDarkCyan
+              className="cursor-pointer text-lg font-bold tracking-tighter text-veryDarkGrayishCyan duration-200 hover:text-desaturatedDarkCyan
                         lg:text-2xl lg:tracking-tight"
             >
               {data.position}
